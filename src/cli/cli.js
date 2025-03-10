@@ -1,9 +1,11 @@
 import { Command } from 'commander'
 import puppeteer from 'puppeteer'
-import fs from 'fs'
 import connectDB from '../config/connectdb.js'
-import cron from 'node-cron'
 import { generateContent } from '../utils/generative-ai.js'
+import { saveToDatabase } from '../routes/upload.js'
+import ora from 'ora'
+import chalk from 'chalk'
+
 const program = new Command()
 
 // yarn cli init
@@ -11,9 +13,15 @@ program
   .command('init')
   .description('Initialize configuration and connect to the database')
   .action(async () => {
-    const client = await connectDB()
-    await client.end()
-    console.log('Database initialized successfully')
+    const spinner = ora('Connecting to the database...').start()
+    try {
+      const client = await connectDB()
+      await client.end()
+      spinner.succeed('Database connected successfully')
+    } catch (err) {
+      spinner.fail('Failed to connect to the database')
+      console.log(chalk.red(err.message))
+    }
   })
 
 // yarn cli crawl https://portfolio-van-trongs-projects.vercel.app/ --style formal --category tech
@@ -25,151 +33,48 @@ program
   .action(async (url, options) => {
     const { style, category } = options
 
+    const spinner = ora('Crawling the URL...').start()
+
     try {
       const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
       const page = await browser.newPage()
-      await page.goto(url, { waitUntil: 'load', timeout: 0 })
+      try {
+        await page.goto(url, { waitUntil: 'load', timeout: 0 })
+      } catch (err) {
+        spinner.fail('Failed to navigate to the URL. Please check the URL and try again.')
+        await browser.close()
+        return
+      }
 
-      const title = await page.title()
-      const htmlContent = await page.evaluate(() => document.documentElement.outerHTML)
+      const heading = await page.title()
+      const htmlContent = await page.evaluate(() => {
+        document.querySelectorAll('script, style, meta').forEach((el) => el.remove())
+        return document.body.innerText.trim()
+      })
 
       await browser.close()
 
-      const content = generateContent(`${title} ${style} ${category} ${htmlContent}`)
+      spinner.succeed('Crawl successful! Proceeding to generate content...')
+      spinner.start('Generating content...')
+
+      const response = await generateContent(
+        `heading:${heading}, style:${style}, category:${category}, htmlContent:${htmlContent}`
+      )
+
+      const cleanResponse = response.replace(/```json|```/g, '').trim()
+      const parsedResponse = JSON.parse(cleanResponse)
+      parsedResponse.url = url
+
+      spinner.succeed('Content generated! Saving to database...')
+      spinner.start('Saving to database...')
+
+      await saveToDatabase(parsedResponse)
+
+      spinner.succeed('Content saved to database successfully!')
     } catch (err) {
-      console.error('Error while crawling', err)
+      spinner.fail('Error while crawling')
+      console.log(chalk.red(err.message))
     }
-  })
-
-program
-  .command('batch <csvFile>')
-  .description('Process batch from a CSV file')
-  .action(async (csvFile) => {
-    const results = JSON.parse(fs.readFileSync(csvFile, 'utf8'))
-    const client = await connectDB()
-    try {
-      for (const row of results) {
-        const { category, url, style } = row
-        const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
-        const page = await browser.newPage()
-        await page.goto(url)
-
-        const title = await page.title()
-        const content = await page.evaluate(() => document.body.innerText)
-
-        const categoryResult = await client.query(
-          'INSERT INTO blog.categories (name) VALUES ($1) ON CONFLICT (name) DO NOTHING RETURNING id',
-          [category]
-        )
-        const categoryId =
-          categoryResult.rows[0]?.id ||
-          (await client.query('SELECT id FROM blog.categories WHERE name = $1', [category])).rows[0].id
-
-        await client.query(
-          'INSERT INTO blog.articles (category_id, title, content, style, url) VALUES ($1, $2, $3, $4, $5)',
-          [categoryId, title, content, style, url]
-        )
-
-        await browser.close()
-      }
-      console.log('Batch data inserted successfully')
-    } catch (err) {
-      console.error('Error inserting data', err)
-    } finally {
-      await client.end()
-    }
-  })
-
-program
-  .command('list')
-  .description('List all created articles')
-  .action(async () => {
-    const client = await connectDB()
-    try {
-      const result = await client.query('SELECT * FROM blog.articles')
-      console.log('Articles:', result.rows)
-    } catch (err) {
-      console.error('Error fetching data', err)
-    } finally {
-      await client.end()
-    }
-  })
-
-program
-  .command('export')
-  .description('Export articles to a file')
-  .option('--format <format>', 'Format of the export (json|md|html)', 'json')
-  .option('--output <output>', 'Output file path', 'exported_articles.json')
-  .action(async (options) => {
-    const { format, output } = options
-    const client = await connectDB()
-    try {
-      const result = await client.query('SELECT * FROM blog.articles')
-      const articles = result.rows
-
-      let data
-      if (format === 'json') {
-        data = JSON.stringify(articles, null, 2)
-      } else if (format === 'md') {
-        data = articles.map((article) => `# ${article.title}\n\n${article.content}`).join('\n\n')
-      } else if (format === 'html') {
-        data = articles.map((article) => `<h1>${article.title}</h1><p>${article.content}</p>`).join('')
-      }
-
-      fs.writeFileSync(output, data)
-      console.log(`Articles exported to ${output}`)
-    } catch (err) {
-      console.error('Error exporting data', err)
-    } finally {
-      await client.end()
-    }
-  })
-
-program
-  .command('schedule')
-  .description('Schedule automatic crawling')
-  .option('--cron <cron>', 'Cron expression for scheduling', '0 0 * * *')
-  .option('--csv <csv>', 'Path to the CSV file')
-  .action((options) => {
-    const { cron: cronExpression, csv } = options
-
-    cron.schedule(cronExpression, async () => {
-      const results = JSON.parse(fs.readFileSync(csv, 'utf8'))
-      const client = await connectDB()
-      try {
-        for (const row of results) {
-          const { category, url, style } = row
-          const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
-          const page = await browser.newPage()
-          await page.goto(url)
-
-          const title = await page.title()
-          const content = await page.evaluate(() => document.body.innerText)
-
-          const categoryResult = await client.query(
-            'INSERT INTO blog.categories (name) VALUES ($1) ON CONFLICT (name) DO NOTHING RETURNING id',
-            [category]
-          )
-          const categoryId =
-            categoryResult.rows[0]?.id ||
-            (await client.query('SELECT id FROM blog.categories WHERE name = $1', [category])).rows[0].id
-
-          await client.query(
-            'INSERT INTO blog.articles (category_id, title, content, style, url) VALUES ($1, $2, $3, $4, $5)',
-            [categoryId, title, content, style, url]
-          )
-
-          await browser.close()
-        }
-        console.log('Scheduled CSV data inserted successfully')
-      } catch (err) {
-        console.error('Error inserting data', err)
-      } finally {
-        await client.end()
-      }
-    })
-
-    console.log(`Scheduled crawling with cron expression: ${cronExpression}`)
   })
 
 program.parse(process.argv)

@@ -17,7 +17,7 @@ const startServer = async () => {
 
     app.listen(envConfig.PORT, () => console.log('Server running http://localhost:' + envConfig.PORT))
   } catch (err) {
-    console.error('Error starting server:', err)
+    console.log('Error starting server:', err)
   }
 }
 

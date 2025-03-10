@@ -27,7 +27,7 @@ const envConfig = (() => {
     const env = envSchema.validateSync(process.env, { abortEarly: false })
     return env
   } catch (error) {
-    console.error('Invalid environment variables:', error.errors)
+    console.log('Invalid environment variables:', error.errors)
     process.exit(1)
   }
 })()
