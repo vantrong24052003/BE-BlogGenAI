@@ -5,11 +5,14 @@
     "format": "prettier --write .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
-    "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\""
+    "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
+    "cli": "nodemon src/cli/cli.js"
   },
   "type": "module",
   "dependencies": {
+    "@google/generative-ai": "^0.24.0",
     "body-parser": "^1.20.3",
+    "commander": "^13.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "eslint-config-prettier": "^10.0.2",
@@ -18,9 +21,11 @@
     "express-rate-limit": "^7.5.0",
     "module-alias": "^2.2.3",
     "mongoose": "^8.11.0",
+    "node-cron": "^3.0.3",
     "nodemailer": "^6.10.0",
     "pg": "^8.13.3",
     "prettier": "^3.5.2",
+    "puppeteer": "^24.4.0",
     "uuid": "^11.1.0",
     "yup": "^1.6.1"
   },

@@ -1,5 +1,5 @@
 import pkg from 'pg'
-import envConfig from './enconfig.js'
+import envConfig from './envconfig.js'
 
 const { Client } = pkg
 
@@ -15,21 +15,36 @@ const connectDB = async () => {
   const client = new Client(dbConfig)
   try {
     await client.connect()
-    console.log('Connected to PostgreSQL database')
 
-    // Set the default schema to 'blog'
-    await client.query('SET search_path TO blog')
-    console.log('Schema set to blog')
+    await client.query('CREATE SCHEMA IF NOT EXISTS blog')
 
-    // Execute SQL queries here
-    const result = await client.query('SELECT * FROM employees')
-    console.log('Query result:', result.rows)
+    await client.query('SET search_path TO blog, public;')
 
-    // Close the connection when done
-    await client.end()
-    console.log('Connection to PostgreSQL closed')
+    await client.query('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";')
 
-    return result.rows
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS blog.categories (
+        id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+        name VARCHAR(255) NOT NULL UNIQUE,
+        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+        updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+      )
+    `)
+
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS blog.articles (
+        id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+        category_id UUID REFERENCES blog.categories(id),
+        title VARCHAR(255) NOT NULL,
+        content TEXT NOT NULL,
+        style VARCHAR(255),
+        url TEXT NOT NULL,
+        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+        updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+      )
+    `)
+
+    return client
   } catch (err) {
     console.error('Error connecting to PostgreSQL database', err)
     process.exit(1)
