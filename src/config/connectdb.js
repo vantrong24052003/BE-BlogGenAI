@@ -12,13 +12,7 @@ const dbConfig = {
 }
 
 const createDatabase = async () => {
-  const client = new Client({
-    user: envConfig.USER_DB,
-    password: envConfig.PASSWORD_DB,
-    host: envConfig.HOST_DB,
-    port: envConfig.PORT_DB,
-    database: 'postgres'
-  })
+  const client = new Client(dbConfig)
 
   try {
     await client.connect()

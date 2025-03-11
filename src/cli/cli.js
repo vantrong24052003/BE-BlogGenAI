@@ -2,9 +2,9 @@ import { Command } from 'commander'
 import puppeteer from 'puppeteer'
 import connectDB from '../config/connectdb.js'
 import { generateContent } from '../library/generative-ai.js'
-import { saveArticle } from '../routes/upload.js'
 import ora from 'ora'
 import chalk from 'chalk'
+import { saveArticle } from '../services/categories.service.js'
 
 const program = new Command()
 
