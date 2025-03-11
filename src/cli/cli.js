@@ -30,7 +30,7 @@ program
   .option('--category <category>', 'Category of the article')
   .action(async (urls, options) => {
     const { style, category } = options
-    console.log(chalk.blueBright(`Starting crawl for URLs...`))
+    console.log(chalk.redBright(`Starting crawl for [${urls}]`))
 
     const spinner = ora('Waitting...').start()
 
@@ -49,6 +49,7 @@ program
         })
 
         worker.on('error', (err) => {
+          console.log(chalk.red(err.message))
           reject(err)
         })
 
@@ -62,10 +63,9 @@ program
 
     try {
       const results = await Promise.all(urls.map((url) => crawlURL(url)))
-      results.forEach((result) => console.log(chalk.green(`Successfully crawled: ${result}`)))
-      spinner.succeed('All URLs processed successfully!')
+      spinner.succeed('end')
     } catch (err) {
-      spinner.fail('Error while processing URLs')
+      spinner.fail('Error while processing urls')
       console.log(chalk.red(err.message))
     }
   })

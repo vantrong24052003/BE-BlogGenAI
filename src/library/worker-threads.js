@@ -2,6 +2,8 @@ import { parentPort, workerData } from 'worker_threads'
 import puppeteer from 'puppeteer'
 import { generateContent } from '../library/generative-ai.js'
 import { saveArticle } from '../services/categories.service.js'
+import ora from 'ora'
+import chalk from 'chalk'
 
 if (!workerData || !workerData.url || !workerData.style || !workerData.category) {
   parentPort.postMessage({ success: false, error: 'Please provide all the required fields: url, style, category' })
@@ -15,9 +17,12 @@ export async function crawHtml() {
   const page = await browser.newPage()
 
   try {
-    await page.goto(url, { waitUntil: 'load', timeout: 0 })
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 0 })
+    console.log(chalk.blueBright(`Crawling ${url}`))
+    console.log('-----------------Crawling successfully-----------------')
 
     const heading = await page.title()
+    // tiền xử lý
     const htmlContent = await page.evaluate(() => {
       document.querySelectorAll('script, style, meta').forEach((el) => el.remove())
       return document.body.innerText.trim()
