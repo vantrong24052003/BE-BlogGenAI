@@ -1,8 +1,8 @@
 import { Command } from 'commander'
 import puppeteer from 'puppeteer'
 import connectDB from '../config/connectdb.js'
-import { generateContent } from '../utils/generative-ai.js'
-import { saveToDatabase } from '../routes/upload.js'
+import { generateContent } from '../library/generative-ai.js'
+import { saveArticle } from '../routes/upload.js'
 import ora from 'ora'
 import chalk from 'chalk'
 
@@ -68,7 +68,7 @@ program
       spinner.succeed('Content generated! Saving to database...')
       spinner.start('Saving to database...')
 
-      await saveToDatabase(parsedResponse)
+      await saveArticle(parsedResponse)
 
       spinner.succeed('Content saved to database successfully!')
     } catch (err) {

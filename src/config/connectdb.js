@@ -43,7 +43,7 @@ const createSchema = async (client) => {
 
 const createCategoriesTable = async (client) => {
   await client.query(`
-    CREATE TABLE IF NOT EXISTS blog.categories (
+    CREATE TABLE IF NOT EXISTS categories (
       id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
       name VARCHAR(255) NOT NULL UNIQUE,
       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -54,9 +54,9 @@ const createCategoriesTable = async (client) => {
 
 const createArticlesTable = async (client) => {
   await client.query(`
-    CREATE TABLE IF NOT EXISTS blog.articles (
+    CREATE TABLE IF NOT EXISTS articles (
       id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-      category_id UUID REFERENCES blog.categories(id),
+      category_id UUID REFERENCES categories(id),
       title VARCHAR(255) NOT NULL,
       content TEXT NOT NULL,
       style VARCHAR(255),
