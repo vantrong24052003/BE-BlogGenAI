@@ -3,8 +3,6 @@ import puppeteer from 'puppeteer'
 import { generateContent } from '../library/generative-ai.js'
 import { saveArticle } from '../services/categories.service.js'
 
-console.log('🚀 ~ workerData:', workerData)
-
 if (!workerData || !workerData.url || !workerData.style || !workerData.category) {
   parentPort.postMessage({ success: false, error: 'Please provide all the required fields: url, style, category' })
   process.exit(1)
@@ -12,7 +10,7 @@ if (!workerData || !workerData.url || !workerData.style || !workerData.category)
 
 const { url, style, category } = workerData
 
-export async function crawlUrl() {
+export async function crawHtml() {
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
   const page = await browser.newPage()
 
@@ -43,4 +41,4 @@ export async function crawlUrl() {
   }
 }
 
-crawlUrl()
+crawHtml()
