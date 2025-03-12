@@ -2,7 +2,6 @@ import { parentPort, workerData } from 'worker_threads'
 import puppeteer from 'puppeteer'
 import { generateContent } from '../library/generative-ai.js'
 import { saveArticle } from '../services/categories.service.js'
-import ora from 'ora'
 import chalk from 'chalk'
 
 if (!workerData || !workerData.url || !workerData.style || !workerData.category) {
@@ -11,6 +10,7 @@ if (!workerData || !workerData.url || !workerData.style || !workerData.category)
 }
 
 const { url, style, category } = workerData
+console.log('🚀 ~ workerData:', workerData)
 
 export async function crawHtml() {
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] })

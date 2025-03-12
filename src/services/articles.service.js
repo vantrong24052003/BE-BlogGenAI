@@ -1,4 +1,6 @@
 import connectDB from '../config/connectdb.js'
+import fs from 'fs'
+import path from 'path'
 
 export const getArticles = async ({ query, category, startDate, endDate, page, limit }) => {
   const dbClient = await connectDB()
@@ -42,4 +44,38 @@ export const getArticles = async ({ query, category, startDate, endDate, page, l
     page,
     limit
   }
+}
+
+export const listArticles = async () => {
+  const client = await connectDB()
+  try {
+    const res = await client.query('select * from blog.articles')
+    return res.rows
+  } catch (err) {
+    console.log('Error fetching articles', err)
+    throw err
+  } finally {
+    await client.end()
+  }
+}
+
+export async function exportArticles(format, output) {
+  const articles = await getArticles({ query: '', category: '', startDate: '', endDate: '', page: 1, limit: 1000 })
+  let content
+
+  switch (format) {
+    case 'json':
+      content = JSON.stringify(articles.articles, null, 2)
+      break
+    case 'md':
+      content = articles.articles.map((article) => `# ${article.title}\n\n${article.content}`).join('\n\n')
+      break
+    case 'html':
+      content = articles.articles.map((article) => `<h1>${article.title}</h1><p>${article.content}</p>`).join('')
+      break
+    default:
+      throw new Error('Unsupported format')
+  }
+
+  fs.writeFileSync(path.resolve(output), content)
 }

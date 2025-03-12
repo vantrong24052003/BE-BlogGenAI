@@ -1,0 +1,52 @@
+[
+  {
+    "id": "63c785e0-c2f9-42d1-9f07-d05dbbedf6f1",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook – Kết nối và Chia sẻ với Mọi Người",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người thân yêu trong cuộc sống của bạn. Tham gia ngay để khám phá những điều thú vị!\n\n**Kết nối dễ dàng:** Tìm kiếm và kết bạn với những người bạn biết, chia sẻ những khoảnh khắc đáng nhớ.\n\n**Chia sẻ thông tin:** Cập nhật tin tức, chia sẻ sở thích và quan điểm cá nhân với cộng đồng.\n\n**Khám phá thế giới:** Theo dõi các trang, nhóm và sự kiện để không bỏ lỡ những thông tin quan trọng và hữu ích.\n\n**Đăng ký ngay:**\n\n*   [Tạo tài khoản mới](https://www.facebook.com/): Tham gia cộng đồng Facebook và bắt đầu kết nối.\n*   [Đăng nhập](https://www.facebook.com/): Tiếp tục khám phá những điều thú vị trên Facebook.\n\nFacebook luôn nỗ lực mang đến trải nghiệm tốt nhất cho người dùng. Cảm ơn bạn đã đồng hành!",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-11T23:59:45.109Z",
+    "updated_at": "2025-03-11T23:59:45.109Z"
+  },
+  {
+    "id": "f80b0e81-eaea-413f-a63c-e4b52b52301f",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm cho 'worker_threads'",
+    "content": "Đây là kết quả tìm kiếm các package npm liên quan đến 'worker_threads', một tính năng của Node.js cho phép thực hiện đa luồng. Danh sách bao gồm các thư viện hỗ trợ tạo và quản lý worker threads một cách dễ dàng, giúp tận dụng tối đa sức mạnh của CPU và cải thiện hiệu suất ứng dụng Node.js.",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-11T23:59:44.303Z",
+    "updated_at": "2025-03-11T23:59:44.303Z"
+  },
+  {
+    "id": "68636355-4226-4aa9-8da0-2df13407d469",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm cho 'worker_threads'",
+    "content": "Dưới đây là một số package npm liên quan đến 'worker_threads', được sắp xếp theo mức độ phổ biến:\n\n*   **web-worker:** Triển khai Web Workers một cách nhất quán trên trình duyệt và Node.js.\n*   **@eshaz/web-worker:** Tương tự như web-worker, cung cấp giải pháp Web Workers nhất quán.\n*   **threads:** Sử dụng web workers và worker threads một cách đơn giản như gọi một hàm.\n*   **poolifier:** Worker Pool nhanh và nhỏ cho Node.js sử dụng Worker Threads và Cluster.\n*   **node-worker-threads-pool:** Pool đơn giản cho worker threads sử dụng module worker_threads của Node. Hỗ trợ ES6+ Promise, Async/Await.\n*   **@xylabs/threads:** Web workers & worker threads đơn giản như gọi một hàm.\n*   **bthreads:** Worker threads cho Javascript.\n*   **funthreads:** Công cụ nhẹ xây dựng trên worker_threads của Node.js, cho phép multithreading.\n*   **worker-threads-pool:** Dễ dàng quản lý một pool các Node.js Worker Threads.\n*   **@chainsafe/threads:** Web workers & worker threads đơn giản như gọi một hàm.\n*   **multee:** Biến các module multitasking của Node, child_process và worker_threads thành các hàm async đơn giản.\n*   **@wixc3/isomorphic-worker:** API worker đa nền tảng đơn giản cho web workers và worker threads.\n*   **sync-actions:** Thư viện để thực thi đồng bộ các hoạt động bất đồng bộ với các lệnh gọi an toàn về kiểu.\n*   **thread-it:** Gói bất kỳ module đồng bộ nào thành thread worker.\n*   **worker-union:** Giúp sử dụng module worker_threads một cách dễ dàng và tiện lợi.\n*   **ntsu:** Các tiện ích lập lịch tác vụ của Node.\n*   **@mmomtchev/web-worker:** Web Workers nhất quán trên trình duyệt và Node.js.\n*   **node-worker-threads-pool-ts:** Pool worker threads đơn giản sử dụng module worker_threads của Node. Hỗ trợ ES6+ Promise, Typescript, Async/Await.\n*   **webpack-multithread:** Chạy song song nhiều cấu hình webpack (sử dụng worker_threads bên dưới).\n*   **@ncpa0cpl/node-worker-bridge:** Wrapper cho Workers của Node, dễ dàng định nghĩa các phương thức và chia sẻ chúng giữa main thread và worker.",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-11T23:56:18.813Z",
+    "updated_at": "2025-03-11T23:56:18.813Z"
+  },
+  {
+    "id": "eec468f1-7058-420e-a9ab-27b7aad01d18",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Đoàn Võ Văn Trọng - Portfolio Hiện Đại",
+    "content": "**Xin chào!**\n\nTôi là Đoàn Võ Văn Trọng, một web developer đầy nhiệt huyết, luôn hướng tới sự sáng tạo và những ứng dụng web năng động. \n\n**Về Tôi:**\n\nHiện tại, tôi đang là sinh viên ngành Kỹ thuật Phần mềm tại Đại học Duy Tân. Tôi không ngừng trau dồi kiến thức và kỹ năng để tạo ra những sản phẩm chất lượng.\n\n**Những Điểm Nổi Bật:**\n\n*   **Đam mê:** Tạo ra các ứng dụng web sáng tạo.\n*   **Tính cách:** Hướng ngoại, coi trọng các mối quan hệ.\n*   **Mục tiêu:** Cùng bạn xây dựng những điều tuyệt vời!\n\n**Kỹ Năng & Công Nghệ:**\n\n*   **Ngôn Ngữ:** JavaScript, TypeScript, HTML/CSS.\n*   **Thư Viện/Framework:** React, NodeJS, VueJS.\n*   **Backend:** NestJS, NextJS, Laravel.\n*   **Database:** PostgreSQL, SQL Server, MongoDB.\n*   **Công Cụ:** VSCode, Postman, Git.\n\n**Kết Nối Với Tôi:**\n\nLuôn sẵn lòng hợp tác và khám phá những ý tưởng mới! Liên hệ với tôi qua:\n\n*   LinkedIn\n*   Facebook\n*   Discord\n*   Email\n*   GitHub\n*   Twitter\n\n**Hãy gửi tin nhắn cho tôi!**",
+    "style": "modern",
+    "url": "https://portfolio-van-trongs-projects.vercel.app",
+    "created_at": "2025-03-11T23:56:17.440Z",
+    "updated_at": "2025-03-11T23:56:17.440Z"
+  },
+  {
+    "id": "6ad685dc-fbe3-4922-a3dd-4a7bfc404178",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook – Kết nối và Chia sẻ với Mọi Người",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người quan trọng trong cuộc sống của bạn. Đăng nhập ngay để bắt đầu chia sẻ những khoảnh khắc, kết nối bạn bè, gia đình và khám phá những điều thú vị xung quanh bạn.\n\n**Kết nối:**\n* Tìm kiếm và kết bạn với những người bạn biết.\n* Tham gia các nhóm để chia sẻ sở thích và đam mê.\n* Kết nối với những người nổi tiếng, thương hiệu và doanh nghiệp yêu thích.\n\n**Chia sẻ:**\n* Đăng tải những khoảnh khắc đáng nhớ trong cuộc sống của bạn.\n* Chia sẻ tin tức, bài viết và video thú vị.\n* Bày tỏ cảm xúc và suy nghĩ của bạn.\n\n**Khám phá:**\n* Khám phá những sự kiện và hoạt động đang diễn ra xung quanh bạn.\n* Tìm hiểu về những chủ đề bạn quan tâm.\n* Cập nhật tin tức và thông tin mới nhất.\n\n**Đăng nhập hoặc Đăng ký:**\nBạn chưa có tài khoản? Đăng ký ngay để trải nghiệm những tiện ích tuyệt vời mà Facebook mang lại.",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-11T23:56:17.295Z",
+    "updated_at": "2025-03-11T23:56:17.295Z"
+  }
+]

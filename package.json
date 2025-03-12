@@ -6,7 +6,8 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
     "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
-    "cli": "nodemon src/cli/cli.js"
+    "cli": "node src/cli/cli.js",
+    "cli:nodemon": "nodemon src/cli/cli.js"
   },
   "type": "module",
   "dependencies": {
@@ -15,6 +16,7 @@
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
     "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
     "dotenv": "^16.4.7",
     "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-prettier": "^5.2.3",

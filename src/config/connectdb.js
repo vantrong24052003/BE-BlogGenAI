@@ -1,5 +1,6 @@
 import pkg from 'pg'
 import envConfig from './envconfig.js'
+import ora from 'ora'
 
 const { Client } = pkg
 
@@ -8,21 +9,23 @@ const dbConfig = {
   password: envConfig.PASSWORD_DB,
   host: envConfig.HOST_DB,
   port: envConfig.PORT_DB,
-  database: envConfig.NAME_DB
+  database: 'postgres'
 }
 
 const createDatabase = async () => {
   const client = new Client(dbConfig)
 
   try {
+    const spinner = ora('Waitting...').start()
     await client.connect()
-    const res = await client.query(`SELECT 1 FROM pg_database WHERE datname = $1`, [envConfig.NAME_DB])
+    const res = await client.query(`select 1 from pg_database where datname = $1`, [envConfig.NAME_DB])
     if (res.rows.length === 0) {
-      await client.query(`CREATE DATABASE "${envConfig.NAME_DB}"`)
+      await client.query(`create database "${envConfig.NAME_DB}"`)
       console.log(`Database "${envConfig.NAME_DB}" created successfully!`)
     }
+    spinner.succeed('Database connected successfully')
   } catch (err) {
-    console.log('Error creating database', err)
+    console.log(chalk.red(err.message))
     process.exit(1)
   } finally {
     await client.end()
@@ -30,40 +33,63 @@ const createDatabase = async () => {
 }
 
 const createSchema = async (client) => {
-  await client.query('CREATE SCHEMA IF NOT EXISTS blog')
-  await client.query('SET search_path TO blog, public;')
-  await client.query('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";')
+  const res = await client.query(`
+    select schema_name
+    from information_schema.schemata
+    where schema_name = 'blog'
+  `)
+  if (res.rows.length === 0) {
+    await client.query('create schema blog')
+    console.log('Schema "blog" created successfully!')
+  }
+  await client.query('set search_path to blog, public;')
+  await client.query('create extension if not exists "uuid-ossp";')
 }
 
 const createCategoriesTable = async (client) => {
-  await client.query(`
-    CREATE TABLE IF NOT EXISTS categories (
-      id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-      name VARCHAR(255) NOT NULL UNIQUE,
-      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-      updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-    )
+  const res = await client.query(`
+    select to_regclass('blog.categories')
   `)
+  if (res.rows[0].to_regclass === null) {
+    await client.query(`
+      create table categories (
+        id uuid primary key default uuid_generate_v4(),
+        name varchar(255) not null unique,
+        created_at timestamptz not null default now(),
+        updated_at timestamptz not null default now()
+      )
+    `)
+    console.log('Table "categories" created successfully!')
+  }
 }
 
 const createArticlesTable = async (client) => {
-  await client.query(`
-    CREATE TABLE IF NOT EXISTS articles (
-      id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-      category_id UUID REFERENCES categories(id),
-      title VARCHAR(255) NOT NULL,
-      content TEXT NOT NULL,
-      style VARCHAR(255),
-      url TEXT NOT NULL,
-      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-      updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-    )
+  const res = await client.query(`
+    select to_regclass('blog.articles')
   `)
+  if (res.rows[0].to_regclass === null) {
+    await client.query(`
+      create table articles (
+        id uuid primary key default uuid_generate_v4(),
+        category_id uuid references categories(id),
+        title varchar(255) not null,
+        content text not null,
+        style varchar(255),
+        url text not null,
+        created_at timestamptz not null default now(),
+        updated_at timestamptz not null default now()
+      )
+    `)
+    console.log('Table "articles" created successfully!')
+  }
 }
 
 const connectDB = async () => {
   await createDatabase()
-  const client = new Client(dbConfig)
+  const client = new Client({
+    ...dbConfig,
+    database: envConfig.NAME_DB
+  })
   try {
     await client.connect()
     await createSchema(client)
