@@ -16,14 +16,12 @@ const createDatabase = async () => {
   const client = new Client(dbConfig)
 
   try {
-    const spinner = ora('Waitting...').start()
     await client.connect()
     const res = await client.query(`select 1 from pg_database where datname = $1`, [envConfig.NAME_DB])
     if (res.rows.length === 0) {
       await client.query(`create database "${envConfig.NAME_DB}"`)
       console.log(`Database "${envConfig.NAME_DB}" created successfully!`)
     }
-    spinner.succeed('Database connected successfully')
   } catch (err) {
     console.log(chalk.red(err.message))
     process.exit(1)
@@ -59,7 +57,7 @@ const createCategoriesTable = async (client) => {
         updated_at timestamptz not null default now()
       )
     `)
-    console.log('Table "categories" created successfully!')
+    console.log('Create table categories successfully')
   }
 }
 
@@ -80,7 +78,7 @@ const createArticlesTable = async (client) => {
         updated_at timestamptz not null default now()
       )
     `)
-    console.log('Table "articles" created successfully!')
+    console.log('Create table articles successfully')
   }
 }
 

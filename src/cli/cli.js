@@ -40,8 +40,10 @@ program
   .command('init')
   .description('Initialize configuration and connect to the database')
   .action(async () => {
+    const spinner = ora('Waitting...').start()
     try {
       const client = await connectDB()
+      spinner.succeed('Database connected successfully')
       await client.end()
     } catch (err) {
       spinner.fail('Failed to connect to the database')
@@ -102,7 +104,7 @@ program
     }
   })
 
-// yarn cli export --format=json --output=/home/vantrong/Documents/BE-BlogGenAI/src/docs/articles2.json
+// yarn cli export --format=json --output=/home/vantrong/Documents/BE-BlogGenAI/src/docs/articles1.json
 program
   .command('export')
   .description('Export articles to a file')
@@ -122,7 +124,7 @@ program
 // 0h
 // yarn cli schedule --cron="0 0 * * *" --csv=/home/vantrong/Documents/BE-BlogGenAI/src/docs/data.csv
 // 2p
-// yarn cli schedule --cron="*/2 * * * *" --csv=/home/vantrong/Documents/BE-BlogGenAI/src/docs/data.csv
+// yarn cli schedule --cron="*/1 * * * *" --csv=/home/vantrong/Documents/BE-BlogGenAI/src/docs/data.csv
 program
   .command('schedule')
   .description('Schedule automatic crawling')

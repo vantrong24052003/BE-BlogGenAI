@@ -10,7 +10,6 @@ if (!workerData || !workerData.url || !workerData.style || !workerData.category)
 }
 
 const { url, style, category } = workerData
-console.log('🚀 ~ workerData:', workerData)
 
 export async function crawHtml() {
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] })

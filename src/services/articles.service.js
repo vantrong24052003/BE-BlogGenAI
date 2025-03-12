@@ -5,42 +5,31 @@ import path from 'path'
 export const getArticles = async ({ query, category, startDate, endDate, page, limit }) => {
   const dbClient = await connectDB()
   const offset = (page - 1) * limit
-  const filters = []
-  const values = []
 
-  if (query) {
-    filters.push(`(title ilike $${filters.length + 1} OR content ilike $${filters.length + 1})`)
-    values.push(`%${query}%`)
-  }
+  const sqlArticles = `
+    SELECT id, category_id, title, content, style, url, created_at, updated_at 
+    FROM articles 
+    WHERE 
+      ($1::text IS NULL OR title ILIKE '%' || $1 || '%' OR content ILIKE '%' || $1 || '%') 
+      AND ($2::uuid IS NULL OR category_id = $2::uuid) 
+      AND ($3::timestamp IS NULL OR created_at >= $3::timestamp) 
+      AND ($4::timestamp IS NULL OR created_at <= $4::timestamp) 
+    ORDER BY created_at DESC 
+    LIMIT $5 OFFSET $6
+  `
 
-  if (category) {
-    filters.push(`category_id = $${filters.length + 1}`)
-    values.push(category)
-  }
+  const sqlTotal = `SELECT COUNT(*) FROM articles WHERE 
+      ($1::text IS NULL OR title ILIKE '%' || $1 || '%' OR content ILIKE '%' || $1 || '%') 
+      AND ($2::uuid IS NULL OR category_id = $2::uuid) 
+      AND ($3::timestamp IS NULL OR created_at >= $3::timestamp) 
+      AND ($4::timestamp IS NULL OR created_at <= $4::timestamp)`
 
-  if (startDate) {
-    filters.push(`created_at >= $${filters.length + 1}`)
-    values.push(startDate)
-  }
+  const articles = await dbClient.query(sqlArticles, [query, category, startDate, endDate, limit, offset])
+  const total = await dbClient.query(sqlTotal, [query, category, startDate, endDate])
 
-  if (endDate) {
-    filters.push(`created_at <= $${filters.length + 1}`)
-    values.push(endDate)
-  }
-
-  const whereClause = filters.length > 0 ? `where ${filters.join(' and ')}` : ''
-  const articles = await dbClient.query(
-    `select id, category_id, title, content, style, url, created_at, updated_at 
-     from articles 
-     ${whereClause}
-     order by created_at desc 
-     limit $${filters.length + 1} offset $${filters.length + 2}`,
-    [...values, limit, offset]
-  )
-  const total = await dbClient.query(`select count(*) from articles ${whereClause}`, values)
   return {
     articles: articles.rows,
-    total: parseInt(total.rows[0].count, 10),
+    total: total.rows[0].count,
     page,
     limit
   }
@@ -49,7 +38,7 @@ export const getArticles = async ({ query, category, startDate, endDate, page, l
 export const listArticles = async () => {
   const client = await connectDB()
   try {
-    const res = await client.query('select * from blog.articles')
+    const res = await client.query('SELECT * FROM blog.articles')
     return res.rows
   } catch (err) {
     console.log('Error fetching articles', err)
@@ -60,7 +49,14 @@ export const listArticles = async () => {
 }
 
 export async function exportArticles(format, output) {
-  const articles = await getArticles({ query: '', category: '', startDate: '', endDate: '', page: 1, limit: 1000 })
+  const articles = await getArticles({
+    query: null,
+    category: null,
+    startDate: null,
+    endDate: null,
+    page: 1,
+    limit: 1000
+  })
   let content
 
   switch (format) {
