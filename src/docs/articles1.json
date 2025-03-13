@@ -1,0 +1,232 @@
+[
+  {
+    "id": "76a13a7a-657a-4c9f-97b9-ef52451dcdbd",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm: worker_threads - Thư viện đa luồng cho Node.js",
+    "content": "Dưới đây là kết quả tìm kiếm các package liên quan đến `worker_threads` trên npm, giúp bạn xây dựng các ứng dụng Node.js đa luồng hiệu suất cao. \n\n**Các package nổi bật:**\n\n*   **web-worker:** Triển khai Web Workers một cách nhất quán trên cả trình duyệt và Node.js. \n*   **@eshaz/web-worker:** Tương tự như `web-worker`, cung cấp sự nhất quán giữa trình duyệt và Node.js. \n*   **threads:** Sử dụng web workers và worker threads dễ dàng như gọi một hàm. \n*   **poolifier:** Worker Pool nhanh và nhỏ cho Node.js, tận dụng `worker_threads` và Cluster. \n*   **node-worker-threads-pool:** Pool đơn giản sử dụng module `worker_threads` của Node.js, tương thích với Promise và Async/Await. \n*   **@xylabs/threads:** Web workers & worker threads dễ dàng như gọi một hàm. \n*   **bthreads:** Worker threads cho Javascript. \n*   **funthreads:** Công cụ lightweight xây dựng trên `worker_threads` để kích hoạt đa luồng. \n*   **worker-threads-pool:** Dễ dàng quản lý pool các Worker Threads của Node.js.\n*   **@chainsafe/threads:** Web workers & worker threads dễ dàng như gọi một hàm. \n*   **multee:** Chuyển đổi các modules đa nhiệm của Node, `child_process` và `worker_threads`, thành các hàm async đơn giản. \n*   **@wixc3/isomorphic-worker:** API worker đơn giản cho web workers và worker threads.\n*   **sync-actions:** Thư viện thực thi đồng bộ các hoạt động bất đồng bộ với các lệnh gọi an toàn về kiểu. \n*   **thread-it:** Wrap bất kỳ module đồng bộ nào vào thread worker.\n*   **worker-union:** Giúp dễ dàng và thuận tiện hơn khi sử dụng module `worker_threads` gốc. \n*   **ntsu:** Tiện ích lập lịch tác vụ của Node. \n*   **@mmomtchev/web-worker:** Triển khai Web Workers nhất quán trên trình duyệt và Node.js. \n*   **node-worker-threads-pool-ts:** Pool đơn giản sử dụng `worker_threads` của Node.js, tương thích với Promise, Typescript và Async/Await. \n*   **webpack-multithread:** Chạy song song nhiều cấu hình webpack (sử dụng `worker_threads`). \n*   **@lakutata/core:** Lakutata Framework Core.\n\n**Lưu ý:** Đây chỉ là một phần nhỏ trong số các package liên quan. Hãy sử dụng các từ khóa tìm kiếm phù hợp để tìm ra package đáp ứng tốt nhất nhu cầu của bạn.",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-12T02:46:52.732Z",
+    "updated_at": "2025-03-12T02:46:52.732Z"
+  },
+  {
+    "id": "c904e0d9-157a-467a-83f3-9eb7c021d831",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook – Kết nối và Chia sẻ",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người quan trọng trong cuộc sống của bạn. Đăng nhập để bắt đầu chia sẻ những khoảnh khắc đáng nhớ, kết nối với bạn bè và gia đình, và khám phá những cộng đồng thú vị. Hoặc, đăng ký ngay hôm nay để tham gia vào mạng lưới kết nối lớn nhất hành tinh!",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-12T02:46:49.603Z",
+    "updated_at": "2025-03-12T02:46:49.603Z"
+  },
+  {
+    "id": "71e71143-5efe-4206-8792-6ea07cbe04a9",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Đoàn Võ Văn Trọng - Portfolio Hiện Đại",
+    "content": "**Xin chào!**\n\nTôi là Đoàn Võ Văn Trọng, một web developer đầy nhiệt huyết, luôn tìm kiếm những giải pháp sáng tạo và hiệu quả. Chào mừng bạn đến với không gian trực tuyến của tôi, nơi tôi chia sẻ những dự án, kỹ năng và kinh nghiệm của mình.\n\n**Về tôi:**\n\nTôi là một người thích khám phá những công nghệ mới và áp dụng chúng để tạo ra những sản phẩm web độc đáo. Hiện tại, tôi đang học tập tại Đại học Duy Tân, chuyên ngành Kỹ thuật Phần mềm, nơi tôi không ngừng trau dồi kiến thức và kỹ năng của mình.\n\n**Tôi có gì?**\n\n*   **Ngôn ngữ:** JavaScript, TypeScript, HTML/CSS\n*   **Thư viện & Framework:** React, NodeJS, VueJS, NestJS, NextJS, Laravel\n*   **Database:** PostgreSQL, SQL Server, MongoDB\n*   **Công cụ:** Visual Studio Code, Postman, Git\n\n**Những dự án tôi đã làm:**\n\n(Danh sách các dự án với mô tả ngắn gọn và công nghệ sử dụng. Nhấn mạnh tính độc đáo và hiệu quả của từng dự án)\n\n**Liên hệ với tôi:**\n\nLuôn sẵn lòng kết nối và trao đổi về những ý tưởng mới. Đừng ngần ngại liên lạc với tôi qua:\n\n*   LinkedIn\n*   Facebook\n*   Discord\n*   Email\n*   GitHub\n*   Twitter\n\n**Hãy cùng nhau tạo nên những điều tuyệt vời!**",
+    "style": "modern",
+    "url": "https://portfolio-van-trongs-projects.vercel.app",
+    "created_at": "2025-03-12T02:46:49.411Z",
+    "updated_at": "2025-03-12T02:46:49.411Z"
+  },
+  {
+    "id": "0f5fa04f-0285-490a-b2f1-0d79eb52c7df",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Portfolio của Đoàn Võ Văn Trọng: Hồ sơ năng lực phát triển web chuyên nghiệp",
+    "content": "Kính chào quý vị,\n\nTôi là Đoàn Võ Văn Trọng, một nhà phát triển web tận tâm và giàu nhiệt huyết, luôn tìm kiếm những giải pháp sáng tạo và hiệu quả cho các ứng dụng web hiện đại. Portfolio này là bản trình bày chi tiết về kinh nghiệm, kỹ năng và các dự án tôi đã thực hiện.\n\n**Thông tin cá nhân:**\n\n*   Họ và tên: Đoàn Võ Văn Trọng\n*   Vị trí: Nhà phát triển web\n*   Học vấn: Sinh viên ngành Kỹ thuật Phần mềm, Đại học Duy Tân\n\n**Kinh nghiệm làm việc:**\n\n(Liệt kê các dự án đã tham gia và mô tả vai trò, trách nhiệm trong từng dự án).\n\n**Kỹ năng chuyên môn:**\n\n*   **Ngôn ngữ lập trình:**\n    *   JavaScript: Thành thạo, sử dụng cho phát triển giao diện người dùng và các tương tác trên trang web.\n    *   TypeScript: Có kinh nghiệm, sử dụng để xây dựng các ứng dụng web lớn và phức tạp.\n    *   HTML/CSS: Nắm vững cấu trúc và trình bày nội dung web.\n*   **Thư viện và Framework:**\n    *   React: Sử dụng thành thạo để xây dựng các giao diện người dùng tương tác.\n    *   NodeJS: Có kinh nghiệm phát triển ứng dụng phía máy chủ.\n    *   VueJS: Nắm vững các khái niệm cơ bản, có khả năng xây dựng giao diện người dùng linh hoạt.\n    *   NestJS, NextJS, Laravel: Đã tiếp xúc và có kiến thức nền tảng.\n*   **Quản lý cơ sở dữ liệu:**\n    *   PostgreSQL, SQL Server, MongoDB: Có kinh nghiệm thiết kế và quản lý cơ sở dữ liệu.\n*   **Công cụ hỗ trợ phát triển:**\n    *   Visual Studio Code: Sử dụng thành thạo để viết và chỉnh sửa code.\n    *   Postman: Sử dụng để kiểm thử API.\n    *   Git: Sử dụng để quản lý phiên bản code và cộng tác với các thành viên khác trong nhóm.\n\n**Các dự án tiêu biểu:**\n\n(Mô tả chi tiết các dự án đã thực hiện, bao gồm mục tiêu, công nghệ sử dụng và kết quả đạt được).\n\n**Liên hệ:**\n\nTôi luôn sẵn sàng hợp tác trong các dự án mới, chia sẻ ý tưởng và tìm kiếm cơ hội nghề nghiệp. Quý vị có thể liên hệ với tôi qua các kênh sau:\n\n*   LinkedIn: (Điền link LinkedIn)\n*   Facebook: (Điền link Facebook)\n*   Discord: (Điền link Discord)\n*   Email: (Điền địa chỉ email)\n*   GitHub: (Điền link GitHub)\n*   Twitter: (Điền link Twitter)\n\nXin chân thành cảm ơn quý vị đã dành thời gian xem qua portfolio của tôi. Rất mong nhận được sự phản hồi và cơ hội hợp tác trong tương lai.",
+    "style": "formal",
+    "url": "https://portfolio-van-trongs-projects.vercel.app/",
+    "created_at": "2025-03-12T02:46:27.010Z",
+    "updated_at": "2025-03-12T02:46:27.010Z"
+  },
+  {
+    "id": "bde01f48-a87b-4bef-8a1d-10f083ae07f4",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Portfolio của Đoàn Võ Văn Trọng",
+    "content": "Kính chào quý vị,\n\nTôi là Đoàn Võ Văn Trọng, một nhà phát triển web tận tâm, luôn hướng đến việc tạo ra những ứng dụng web động và sáng tạo. Hiện tại, tôi đang theo đuổi ngành Kỹ thuật Phần mềm tại Đại học Duy Tân, nơi tôi không ngừng trau dồi kỹ năng và kiến thức chuyên môn.\n\n**Giới thiệu:**\n\nVới niềm đam mê mãnh liệt với công nghệ, tôi luôn tìm kiếm những thử thách mới để phát triển bản thân và tạo ra những sản phẩm có giá trị. Tôi tin rằng sự kết hợp giữa kiến thức vững chắc và khả năng sáng tạo là chìa khóa để thành công trong lĩnh vực phát triển web.\n\n**Kinh nghiệm:**\n\n*   **Ngôn ngữ lập trình:** JavaScript, TypeScript, HTML/CSS\n*   **Thư viện/Framework:** React, NodeJS, VueJS, NestJS, NextJS, Laravel\n*   **Cơ sở dữ liệu:** PostgreSQL, SQL Server, MongoDB\n*   **Công cụ phát triển:** Visual Studio Code, Postman, Git\n\n**Dự án nổi bật:**\n\n(Thông tin chi tiết về các dự án đã thực hiện, bao gồm mô tả, công nghệ sử dụng và vai trò của tôi trong dự án.)\n\n**Kỹ năng:**\n\n*   Phân tích yêu cầu và thiết kế hệ thống\n*   Lập trình web frontend và backend\n*   Quản lý cơ sở dữ liệu\n*   Kiểm thử và triển khai ứng dụng\n*   Giao tiếp và làm việc nhóm\n\n**Liên hệ:**\n\nTôi luôn sẵn lòng hợp tác trong các dự án mới, chia sẻ ý tưởng và khám phá các cơ hội việc làm. Xin vui lòng liên hệ với tôi qua các kênh sau:\n\n*   LinkedIn\n*   Facebook\n*   Discord\n*   Email\n*   GitHub\n*   Twitter\n\nXin chân thành cảm ơn quý vị đã dành thời gian ghé thăm trang portfolio của tôi. Rất mong nhận được sự hợp tác từ quý vị.",
+    "style": "formal",
+    "url": "https://portfolio-van-trongs-projects.vercel.app/",
+    "created_at": "2025-03-12T02:44:59.844Z",
+    "updated_at": "2025-03-12T02:44:59.844Z"
+  },
+  {
+    "id": "6b9d43af-54e6-4fca-949e-f39bd4a61366",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Portfolio - Đoàn Võ Văn Trọng: Hồ sơ chuyên nghiệp về phát triển web",
+    "content": "Đây là hồ sơ năng lực trực tuyến của Đoàn Võ Văn Trọng, một nhà phát triển web tận tâm, luôn hướng đến việc tạo ra các ứng dụng web sáng tạo và hiệu quả.\n\n**Giới thiệu:**\n\nTôi là một nhà phát triển web giàu kinh nghiệm, đam mê tạo ra các giải pháp web động và tiên tiến. Hiện tại, tôi đang theo học ngành Kỹ thuật Phần mềm tại Đại học Duy Tân, nơi tôi đã trau dồi kỹ năng và kiến thức chuyên môn. Tôi luôn coi trọng các mối quan hệ và sẵn sàng kết nối với mọi người.\n\n**Kinh nghiệm và thành tựu:**\n\n(Liệt kê các dự án tiêu biểu đã thực hiện, trình bày ngắn gọn về mục tiêu, vai trò và công nghệ sử dụng trong mỗi dự án).\n\n**Kỹ năng chuyên môn:**\n\n*   **Ngôn ngữ lập trình:** JavaScript, Typescript, HTML/CSS.\n*   **Thư viện/Framework:** React, NodeJS, VueJS, NestJS, NextJS, Laravel.\n*   **Quản lý cơ sở dữ liệu:** PostgreSQL, SQL Server, MongoDB.\n*   **Công cụ phát triển:** Visual Studio Code, Postman, Git.\n\n**Liên hệ:**\n\nTôi luôn sẵn sàng hợp tác trong các dự án thú vị, trao đổi ý tưởng mới, hoặc khám phá các cơ hội nghề nghiệp có ý nghĩa. Xin vui lòng liên hệ với tôi qua:\n\n*   LinkedIn\n*   Facebook\n*   Discord\n*   Email\n*   GitHub\n*   Twitter\n\nXin chân thành cảm ơn đã ghé thăm trang web của tôi. Rất mong có cơ hội được hợp tác và trao đổi với bạn!",
+    "style": "formal",
+    "url": "https://portfolio-van-trongs-projects.vercel.app/",
+    "created_at": "2025-03-12T02:43:44.515Z",
+    "updated_at": "2025-03-12T02:43:44.515Z"
+  },
+  {
+    "id": "042fa73e-1839-46ad-bbad-e40d01eea77d",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Portfolio của Đoàn Võ Văn Trọng: Kỹ sư Phát triển Web Chuyên Nghiệp",
+    "content": "Kính chào quý vị, tôi là Đoàn Võ Văn Trọng, một kỹ sư phát triển web đầy nhiệt huyết, luôn hướng đến việc tạo ra các ứng dụng web sáng tạo và hiệu quả. Trang portfolio này được thiết kế để giới thiệu chi tiết về kinh nghiệm, kỹ năng, và các dự án mà tôi đã thực hiện.\n\n**Thông tin cá nhân:**\n\nTôi hiện đang là sinh viên chuyên ngành Kỹ thuật Phần mềm tại Đại học Duy Tân. Trong quá trình học tập, tôi đã không ngừng trau dồi kiến thức chuyên môn và kỹ năng thực hành để trở thành một kỹ sư phát triển web chuyên nghiệp.\n\n**Kỹ năng chuyên môn:**\n\n*   **Ngôn ngữ lập trình:** JavaScript, TypeScript, HTML/CSS.\n*   **Thư viện và Framework:** React, NodeJS, VueJS, NestJS, NextJS, Laravel.\n*   **Quản lý cơ sở dữ liệu:** PostgreSQL, SQL Server, MongoDB.\n*   **Công cụ phát triển:** Visual Studio Code, Postman, Git.\n\n**Dự án nổi bật:**\n\n(Chi tiết về các dự án đã hoàn thành, bao gồm mô tả, công nghệ sử dụng, và vai trò của tôi trong dự án.)\n\n**Liên hệ:**\n\nNếu quý vị có nhu cầu hợp tác, trao đổi ý tưởng, hoặc tìm kiếm một kỹ sư phát triển web tài năng, xin vui lòng liên hệ với tôi qua các kênh sau:\n\n*   LinkedIn.\n*   Facebook.\n*   Discord.\n*   Email.\n*   GitHub.\n*   Twitter.\n\nTôi rất mong nhận được sự quan tâm và hợp tác từ quý vị.",
+    "style": "formal",
+    "url": "https://portfolio-van-trongs-projects.vercel.app/",
+    "created_at": "2025-03-12T02:43:10.486Z",
+    "updated_at": "2025-03-12T02:43:10.486Z"
+  },
+  {
+    "id": "4b8fa9de-ecbe-4a06-90e7-8924ab4a2ad4",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Portfolio của Đoàn Võ Văn Trọng: Kỹ sư Phát triển Web Chuyên Nghiệp",
+    "content": "Xin chào quý vị! Tôi là Đoàn Võ Văn Trọng, một kỹ sư phát triển web tận tâm và luôn khát khao tạo ra những ứng dụng web độc đáo, mang tính đột phá.\n\n**Giới thiệu về bản thân:**\n\nTôi là một kỹ sư phát triển web với niềm đam mê mãnh liệt trong việc kiến tạo các giải pháp web sáng tạo và hiệu quả. Hiện tại, tôi đang theo đuổi chuyên ngành Kỹ thuật Phần mềm tại Đại học Duy Tân, nơi tôi không ngừng trau dồi kiến thức và kỹ năng chuyên môn. Tôi luôn coi trọng việc xây dựng các mối quan hệ và sẵn sàng kết nối với những người có chung chí hướng.\n\n**Kinh nghiệm và Thành tựu:**\n\n(Liệt kê các dự án đã thực hiện, đóng góp nổi bật, giải thưởng (nếu có))\n\n**Kỹ năng chuyên môn:**\n\n*   **Ngôn ngữ lập trình:** JavaScript, TypeScript, HTML/CSS\n*   **Thư viện/Framework:** React, NodeJS, VueJS, NestJS, NextJS, Laravel\n*   **Quản lý cơ sở dữ liệu:** PostgreSQL, SQL Server, MongoDB\n*   **Công cụ phát triển:** Visual Studio Code, Postman, Git\n\n**Liên hệ:**\n\nTôi luôn sẵn lòng hợp tác trong các dự án thú vị, trao đổi ý tưởng mới hoặc tìm kiếm các cơ hội việc làm có ý nghĩa. Xin vui lòng liên hệ với tôi qua các kênh sau:\n\n*   LinkedIn: [https://www.linkedin.com/in/tr%E1%BB%8Dng-%C4%91o%C3%A0n-850a17343/](https://www.linkedin.com/in/tr%E1%BB%8Dng-%C4%91o%C3%A0n-850a17343/)\n*   Facebook: [https://www.facebook.com/doanvo.vantrong/](https://www.facebook.com/doanvo.vantrong/)\n*   Email: trongdn2405@gmail.com\n*   GitHub: [https://github.com/vantrong2405](https://github.com/vantrong2405)\n*   Twitter: [https://x.com/Trongdn2405](https://x.com/Trongdn2405)\n\nXin chân thành cảm ơn quý vị đã ghé thăm portfolio của tôi!",
+    "style": "formal",
+    "url": "https://portfolio-van-trongs-projects.vercel.app/",
+    "created_at": "2025-03-12T01:18:09.130Z",
+    "updated_at": "2025-03-12T01:18:09.130Z"
+  },
+  {
+    "id": "50a96971-5964-40a7-85cc-2813934e0c45",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Portfolio của Đoàn Võ Văn Trọng: Kỹ sư Phát triển Web Chuyên Nghiệp",
+    "content": "**Giới thiệu:**\n\nKính chào quý vị, tôi là Đoàn Võ Văn Trọng, một kỹ sư phát triển web tận tâm và giàu nhiệt huyết. Tôi luôn hướng đến việc tạo ra những ứng dụng web năng động và mang tính đột phá.\n\n**Thông tin cá nhân:**\n\nHiện tại, tôi đang theo đuổi con đường học vấn tại Đại học Duy Tân, chuyên ngành Kỹ thuật Phần mềm. Tại đây, tôi đã có cơ hội trau dồi và hoàn thiện các kỹ năng chuyên môn, đồng thời không ngừng mở rộng kiến thức trong lĩnh vực công nghệ thông tin. Với tính cách hòa đồng và cởi mở, tôi luôn trân trọng những mối quan hệ và sự kết nối với mọi người. Hãy cùng nhau tạo nên những điều tuyệt vời và đầy cảm hứng!\n\n**Thành tựu nổi bật:**\n\n(Liệt kê các dự án đã thực hiện)\n\n**Kỹ năng chuyên môn:**\n\n*   **Ngôn ngữ lập trình:** JavaScript, TypeScript, HTML/CSS.\n*   **Thư viện và Framework:** React, NodeJS, VueJS, NestJS, NextJS, Laravel.\n*   **Quản lý cơ sở dữ liệu:** PostgreSQL, SQL Server, MongoDB.\n*   **Công cụ phát triển:** Visual Studio Code, Postman, Git.\n\n**Liên hệ:**\n\nNếu quý vị quan tâm đến việc hợp tác trong các dự án sáng tạo, trao đổi ý tưởng hoặc tìm kiếm cơ hội việc làm, xin vui lòng liên hệ với tôi qua các kênh sau:\n\n*   LinkedIn\n*   Facebook\n*   Discord\n*   Email\n*   GitHub\n*   Twitter\n\n**Gửi tin nhắn:**\n\nXin vui lòng điền vào mẫu tin nhắn để gửi thông điệp trực tiếp đến tôi.",
+    "style": "formal",
+    "url": "https://portfolio-van-trongs-projects.vercel.app/",
+    "created_at": "2025-03-12T01:18:01.674Z",
+    "updated_at": "2025-03-12T01:18:01.674Z"
+  },
+  {
+    "id": "1d38b0b6-dd34-47a8-bc3f-3246e46cbb49",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Doan Vo Van Trong - Modern Web Developer Portfolio",
+    "content": "Hey there! 👋 I'm Doan Vo Van Trong, a web developer passionate about building cool and dynamic applications. Check out my portfolio to see what I've been up to!\n\n**About Me**\n\nI'm a Software Engineering student at Duy Tan University, constantly leveling up my skills. I love connecting with people and creating inspiring things together.\n\n**My Skills**\n\n*   **Languages:** JavaScript, TypeScript, HTML/CSS - I speak fluent web.\n*   **Libraries/Frameworks:** React, NodeJS, VueJS - My go-to tools for building interactive UIs.\n*   **Backend:** NestJS, NextJS, Laravel - For creating scalable server-side applications.\n*   **Databases:** PostgreSQL, SQL Server, MongoDB - Managing data like a boss.\n*   **Tools:** VS Code, Postman, Git - My everyday essentials.\n\n**What I've Achieved**\n\nI've worked on some exciting projects, from interactive web apps to scalable backends. (Details coming soon! 😉)\n\n**Let's Connect!**\n\n*   **LinkedIn:** [https://www.linkedin.com/in/tr%E1%BB%8Dng-%C4%91o%C3%A0n-850a17343/](https://www.linkedin.com/in/tr%E1%BB%8Dng-%C4%91o%C3%A0n-850a17343/)\n*   **Facebook:** [https://www.facebook.com/doanvo.vantrong/](https://www.facebook.com/doanvo.vantrong/)\n*   **Discord:** (Coming Soon!)\n*   **Email:** trongdn2405@gmail.com - Drop me a line!\n*   **GitHub:** [https://github.com/vantrong2405](https://github.com/vantrong2405) - See my code in action.\n*   **Twitter:** [https://x.com/Trongdn2405](https://x.com/Trongdn2405)\n\nI'm always open to new opportunities and collaborations. If you have a project in mind or just want to chat, hit me up! 🚀",
+    "style": "modern",
+    "url": "https://portfolio-van-trongs-projects.vercel.app",
+    "created_at": "2025-03-12T00:10:06.019Z",
+    "updated_at": "2025-03-12T00:10:06.019Z"
+  },
+  {
+    "id": "0ff73c65-74b4-432f-aa92-b881e221d9d4",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook - Kết nối và Chia sẻ",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người quan trọng trong cuộc sống của bạn. Đăng nhập để bắt đầu hoặc tạo một tài khoản mới ngay hôm nay! Kết nối với bạn bè, gia đình và khám phá những điều bạn quan tâm.",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-12T00:10:05.056Z",
+    "updated_at": "2025-03-12T00:10:05.056Z"
+  },
+  {
+    "id": "f2583344-a1fb-4187-a4a7-f7c3271c3d6d",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Đoàn Võ Văn Trọng - Modern Portfolio",
+    "content": "Hey! 👋 Mình là Đoàn Võ Văn Trọng, một web developer luôn tìm kiếm những điều mới mẻ và thử thách. Portfolio này là nơi mình chia sẻ những dự án thú vị, kỹ năng và những gì mình đã học được.\n\n**Về mình:**\n\nMình là sinh viên Kỹ thuật Phần mềm tại Đại học Duy Tân. Mình thích xây dựng các ứng dụng web có tính sáng tạo và mang lại trải nghiệm tốt cho người dùng. Luôn sẵn sàng kết nối và học hỏi từ mọi người!\n\n**Kỹ năng chính:**\n\n*   **Web Dev:** JavaScript, TypeScript, HTML/CSS, React, Node.js, Vue.js, Next.js, NestJS, Laravel.\n*   **Database:** PostgreSQL, SQL Server, MongoDB.\n*   **Tools:** VS Code, Postman, Git.\n\n**Dự án nổi bật:**\n\n(Liệt kê các dự án quan trọng, mô tả ngắn gọn, và công nghệ sử dụng. Thêm hình ảnh hoặc demo nếu có.)\n\n**Mình dùng gì để làm việc?**\n\n*   **Lập trình:** JavaScript, TypeScript, HTML/CSS (Mình thích clean code và hiệu năng cao 😎)\n*   **Thư viện & Framework:** React (Ưa thích!), Node.js, Vue.js (Đang tìm hiểu thêm), Next.js, NestJS, Laravel (Backend chiến thôi! 💪)\n*   **Database:** PostgreSQL, SQL Server, MongoDB (Chọn cái nào phù hợp nhất với dự án!)\n*   **Công cụ:** VS Code (Editor ruột), Postman (Test API siêu nhanh), Git (Version control là nhất định rồi!)\n\n**Kết nối với mình:**\n\n*   LinkedIn: [https://www.linkedin.com/in/tr%E1%BB%8Dng-%C4%91o%C3%A0n-850a17343/](https://www.linkedin.com/in/tr%E1%BB%8Dng-%C4%91o%C3%A0n-850a17343/)\n*   Facebook: [https://www.facebook.com/doanvo.vantrong/](https://www.facebook.com/doanvo.vantrong/)\n*   Email: trongdn2405@gmail.com\n*   GitHub: [https://github.com/vantrong2405](https://github.com/vantrong2405)\n*   Twitter: [https://x.com/Trongdn2405](https://x.com/Trongdn2405)\n\nNếu bạn có ý tưởng hay, muốn collab, hoặc chỉ đơn giản là muốn trò chuyện về tech, đừng ngại liên hệ với mình nhé! 🚀",
+    "style": "modern",
+    "url": "https://portfolio-van-trongs-projects.vercel.app",
+    "created_at": "2025-03-12T00:08:07.262Z",
+    "updated_at": "2025-03-12T00:08:07.262Z"
+  },
+  {
+    "id": "4f334284-682c-42ae-bca8-21bfd4b53f36",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm cho 'worker_threads'",
+    "content": "Kết quả tìm kiếm cho 'worker_threads' trên npm:\n\nDanh sách các packages liên quan đến 'worker_threads' trên npm, bao gồm:\n\n*   **web-worker:** Triển khai Web Workers nhất quán trên trình duyệt và Node.js. (developit)\n*   **@eshaz/web-worker:** Triển khai Web Workers nhất quán trên trình duyệt và Node.js. (eshaz)\n*   **threads:** Sử dụng web workers & worker threads đơn giản như gọi một hàm. (andywer)\n*   **poolifier:** Worker_Threads và Cluster Worker Pool nhanh và nhỏ cho Node.js. (pioardi)\n*   **node-worker-threads-pool:** Worker threads pool đơn giản sử dụng module worker_threads của Node. Hỗ trợ ES6+ Promise, Async/Await. (mokuo)\n*   **@xylabs/threads:** Sử dụng web workers & worker threads đơn giản như gọi một hàm. (xyo)\n*   **bthreads:** Worker threads cho javascript. (chjj)\n*   **funthreads:** Một công cụ lightweight xây dựng trên worker_threads của Node.js, cho phép multithreading. (nairi.harutyunyan)\n*   **worker-threads-pool:** Dễ dàng quản lý một pool các Node.js Worker Threads. (watson)\n*   **@chainsafe/threads:** Sử dụng web workers & worker threads đơn giản như gọi một hàm. (wemeetagain)\n*   **multee:** Biến các module multitasking của node, child_process và worker_threads thành các hàm async đơn giản. (rjyo)\n*   **@wixc3/isomorphic-worker:** API worker cross đơn giản hóa cho web workers và worker threads. (cijoe)\n*   **sync-actions:** Một thư viện để thực thi đồng bộ các hoạt động không đồng bộ với các lệnh gọi an toàn về kiểu. (koyopro)\n*   **thread-it:** Wrap bất kỳ module sync nào thành thread worker. (coderaiser)\n*   **worker-union:** Package giúp dễ dàng và thuận tiện sử dụng module worker_threads native. (alextolmachevv)\n*   **ntsu:** Các tiện ích lên lịch tác vụ Node. (ivan.hell)\n*   **@mmomtchev/web-worker:** Triển khai Web Workers nhất quán trên trình duyệt và Node.js. (mmomtchev)\n*   **node-worker-threads-pool-ts:** Worker threads pool đơn giản sử dụng module worker_threads của Node. Hỗ trợ ES6+ Promise, Typescript, Async/Await. (urielch)\n*   **webpack-multithread:** Chạy song song nhiều cấu hình webpack (sử dụng worker_threads). (patrokl)\n*   **@ncpa0cpl/node-worker-bridge:** Wrapper cho Workers của Node, dễ dàng định nghĩa các method và chia sẻ chúng giữa main thread và worker. (ncpa0cpl)",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-12T00:08:06.584Z",
+    "updated_at": "2025-03-12T00:08:06.584Z"
+  },
+  {
+    "id": "6cdc9011-60f7-4f1b-b927-df987afd5902",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Portfolio - Đoàn Võ Văn Trọng: Sáng tạo Web Hiện Đại",
+    "content": "Chào mừng bạn đến với không gian số của Đoàn Võ Văn Trọng, nơi hội tụ những ý tưởng đột phá và giải pháp công nghệ tiên tiến. Hãy cùng khám phá hành trình phát triển web đầy cảm hứng của tôi!\n\n**Giới thiệu:**\n\nTôi là Đoàn Võ Văn Trọng, một web developer trẻ trung và đầy nhiệt huyết. Với tôi, mỗi dòng code là một cơ hội để tạo ra sự khác biệt và mang đến những trải nghiệm tuyệt vời cho người dùng. Hiện tại, tôi đang theo học ngành Kỹ thuật Phần mềm tại Đại học Duy Tân, không ngừng trau dồi kiến thức và kỹ năng để đáp ứng những thách thức của thế giới công nghệ.\n\n**Điểm nổi bật:**\n\n*   **Tư duy sáng tạo:** Luôn tìm kiếm những giải pháp mới mẻ và độc đáo.\n*   **Khả năng học hỏi nhanh:** Nắm bắt công nghệ mới một cách dễ dàng.\n*   **Làm việc nhóm hiệu quả:** Hợp tác và chia sẻ để đạt được mục tiêu chung.\n\n**Công nghệ yêu thích:**\n\n*   **Frontend:** JavaScript, TypeScript, React, VueJS\n*   **Backend:** NodeJS, NestJS, NextJS, Laravel\n*   **Database:** PostgreSQL, MongoDB, SQL Server\n*   **Tools:** VS Code, Postman, Git\n\n**Liên hệ ngay!**\n\nBạn có ý tưởng dự án thú vị? Hay đơn giản là muốn trò chuyện về công nghệ? Hãy kết nối với tôi qua:\n\n*   LinkedIn\n*   Facebook\n*   Email\n*   GitHub\n*   Twitter\n\nCùng nhau xây dựng những sản phẩm web ấn tượng!",
+    "style": "modern",
+    "url": "https://portfolio-van-trongs-projects.vercel.app",
+    "created_at": "2025-03-12T00:06:05.673Z",
+    "updated_at": "2025-03-12T00:06:05.673Z"
+  },
+  {
+    "id": "c9f4a4ad-a9c6-44d2-a536-6e0cf27be32a",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook – Kết nối và Chia sẻ với mọi người",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người quan trọng trong cuộc sống của bạn. Hãy đăng nhập để bắt đầu hoặc tạo một tài khoản mới ngay hôm nay!\n\n**Kết nối:** Tìm lại bạn bè cũ, kết nối với đồng nghiệp và xây dựng mạng lưới của bạn.\n\n**Chia sẻ:** Cập nhật những gì đang diễn ra trong cuộc sống của bạn, chia sẻ ảnh, video và những khoảnh khắc đáng nhớ.\n\n**Khám phá:** Tìm kiếm thông tin, khám phá các sự kiện, tham gia các nhóm và kết nối với những người có chung sở thích.\n\n**Tạo Trang:** Nếu bạn là một người nổi tiếng, thương hiệu hoặc doanh nghiệp, hãy tạo một Trang để kết nối với người hâm mộ và khách hàng của bạn.",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-12T00:06:04.797Z",
+    "updated_at": "2025-03-12T00:06:04.797Z"
+  },
+  {
+    "id": "8aed7f8f-0433-42a4-b6bc-5b960de4d087",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm: worker_threads",
+    "content": "Kết quả tìm kiếm npm cho từ khóa 'worker_threads' hiển thị danh sách các package liên quan giúp quản lý và sử dụng worker threads trong Node.js và môi trường trình duyệt. Các package này cung cấp các giải pháp khác nhau, từ việc tạo pool worker đơn giản, chạy song song các tác vụ, đến trừu tượng hóa API worker để sử dụng dễ dàng hơn. Một số package nổi bật bao gồm 'web-worker', 'threads', 'poolifier', và 'node-worker-threads-pool', mỗi package đều có số lượng người dùng, mức độ phổ biến và giấy phép khác nhau. Việc lựa chọn package phù hợp phụ thuộc vào nhu cầu cụ thể của dự án và mức độ phức tạp mong muốn.",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-12T00:06:04.755Z",
+    "updated_at": "2025-03-12T00:06:04.755Z"
+  },
+  {
+    "id": "e7449d56-0848-43ad-bdc2-fac97ef009ec",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm: worker_threads",
+    "content": "Kết quả tìm kiếm cho 'worker_threads' trên npm:\n\nTìm thấy 90 packages.\n\nDưới đây là một số kết quả nổi bật:\n\n*   **web-worker:** Web Workers nhất quán cho trình duyệt và Node.js (developit)\n*   **@eshaz/web-worker:** Web Workers nhất quán cho trình duyệt và Node.js (eshaz)\n*   **threads:** Web workers & worker threads đơn giản như gọi một hàm (andywer)\n*   **poolifier:** Worker_Threads và Cluster Worker Pool nhanh và nhỏ cho Node.js (pioardi)\n*   **node-worker-threads-pool:** Worker threads pool đơn giản sử dụng module worker_threads của Node. Hỗ trợ ES6+ Promise, Async/Await (mokuo)\n\n...(Danh sách tiếp tục với các packages khác)",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-12T00:04:05.040Z",
+    "updated_at": "2025-03-12T00:04:05.040Z"
+  },
+  {
+    "id": "e9a500b5-c2bb-45ca-89a5-0b983de9dd19",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook – Kết nối và Chia sẻ với Mọi Người",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người quan trọng trong cuộc sống của bạn. \n\n**Đăng nhập**\n\n[Liên kết đăng nhập]\n\nQuên mật khẩu?\n\n[Liên kết Quên mật khẩu]\n\n**Tạo tài khoản mới**\n\n[Liên kết Tạo tài khoản mới]\n\nTạo một Trang cho người nổi tiếng, thương hiệu hoặc doanh nghiệp.\n\n[Liên kết Tạo Trang]\n\nCác liên kết khác:\n* Messenger\n* Facebook Lite\n* Video\n* Meta Pay\n* Meta Store\n* Meta Quest\n* Ray-Ban Meta\n* Meta AI\n* Instagram\n* Threads\n* Trung tâm Thông tin Bầu cử\n* Chính sách Bảo mật\n* Trung tâm Bảo mật\n* Giới thiệu\n* Tạo quảng cáo\n* Tạo Trang\n* Nhà phát triển\n* Tuyển dụng\n* Cookie\n* Lựa chọn quảng cáo\n* Điều khoản\n* Trợ giúp\n* Liên hệ",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-12T00:04:04.371Z",
+    "updated_at": "2025-03-12T00:04:04.371Z"
+  },
+  {
+    "id": "63c785e0-c2f9-42d1-9f07-d05dbbedf6f1",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook – Kết nối và Chia sẻ với Mọi Người",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người thân yêu trong cuộc sống của bạn. Tham gia ngay để khám phá những điều thú vị!\n\n**Kết nối dễ dàng:** Tìm kiếm và kết bạn với những người bạn biết, chia sẻ những khoảnh khắc đáng nhớ.\n\n**Chia sẻ thông tin:** Cập nhật tin tức, chia sẻ sở thích và quan điểm cá nhân với cộng đồng.\n\n**Khám phá thế giới:** Theo dõi các trang, nhóm và sự kiện để không bỏ lỡ những thông tin quan trọng và hữu ích.\n\n**Đăng ký ngay:**\n\n*   [Tạo tài khoản mới](https://www.facebook.com/): Tham gia cộng đồng Facebook và bắt đầu kết nối.\n*   [Đăng nhập](https://www.facebook.com/): Tiếp tục khám phá những điều thú vị trên Facebook.\n\nFacebook luôn nỗ lực mang đến trải nghiệm tốt nhất cho người dùng. Cảm ơn bạn đã đồng hành!",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-11T23:59:45.109Z",
+    "updated_at": "2025-03-11T23:59:45.109Z"
+  },
+  {
+    "id": "f80b0e81-eaea-413f-a63c-e4b52b52301f",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm cho 'worker_threads'",
+    "content": "Đây là kết quả tìm kiếm các package npm liên quan đến 'worker_threads', một tính năng của Node.js cho phép thực hiện đa luồng. Danh sách bao gồm các thư viện hỗ trợ tạo và quản lý worker threads một cách dễ dàng, giúp tận dụng tối đa sức mạnh của CPU và cải thiện hiệu suất ứng dụng Node.js.",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-11T23:59:44.303Z",
+    "updated_at": "2025-03-11T23:59:44.303Z"
+  },
+  {
+    "id": "68636355-4226-4aa9-8da0-2df13407d469",
+    "category_id": "7ef48fbd-655d-4e9f-bf25-e23051a39fd5",
+    "title": "Kết quả tìm kiếm npm cho 'worker_threads'",
+    "content": "Dưới đây là một số package npm liên quan đến 'worker_threads', được sắp xếp theo mức độ phổ biến:\n\n*   **web-worker:** Triển khai Web Workers một cách nhất quán trên trình duyệt và Node.js.\n*   **@eshaz/web-worker:** Tương tự như web-worker, cung cấp giải pháp Web Workers nhất quán.\n*   **threads:** Sử dụng web workers và worker threads một cách đơn giản như gọi một hàm.\n*   **poolifier:** Worker Pool nhanh và nhỏ cho Node.js sử dụng Worker Threads và Cluster.\n*   **node-worker-threads-pool:** Pool đơn giản cho worker threads sử dụng module worker_threads của Node. Hỗ trợ ES6+ Promise, Async/Await.\n*   **@xylabs/threads:** Web workers & worker threads đơn giản như gọi một hàm.\n*   **bthreads:** Worker threads cho Javascript.\n*   **funthreads:** Công cụ nhẹ xây dựng trên worker_threads của Node.js, cho phép multithreading.\n*   **worker-threads-pool:** Dễ dàng quản lý một pool các Node.js Worker Threads.\n*   **@chainsafe/threads:** Web workers & worker threads đơn giản như gọi một hàm.\n*   **multee:** Biến các module multitasking của Node, child_process và worker_threads thành các hàm async đơn giản.\n*   **@wixc3/isomorphic-worker:** API worker đa nền tảng đơn giản cho web workers và worker threads.\n*   **sync-actions:** Thư viện để thực thi đồng bộ các hoạt động bất đồng bộ với các lệnh gọi an toàn về kiểu.\n*   **thread-it:** Gói bất kỳ module đồng bộ nào thành thread worker.\n*   **worker-union:** Giúp sử dụng module worker_threads một cách dễ dàng và tiện lợi.\n*   **ntsu:** Các tiện ích lập lịch tác vụ của Node.\n*   **@mmomtchev/web-worker:** Web Workers nhất quán trên trình duyệt và Node.js.\n*   **node-worker-threads-pool-ts:** Pool worker threads đơn giản sử dụng module worker_threads của Node. Hỗ trợ ES6+ Promise, Typescript, Async/Await.\n*   **webpack-multithread:** Chạy song song nhiều cấu hình webpack (sử dụng worker_threads bên dưới).\n*   **@ncpa0cpl/node-worker-bridge:** Wrapper cho Workers của Node, dễ dàng định nghĩa các phương thức và chia sẻ chúng giữa main thread và worker.",
+    "style": "modern",
+    "url": "https://www.npmjs.com/search?q=keywords:worker_threads",
+    "created_at": "2025-03-11T23:56:18.813Z",
+    "updated_at": "2025-03-11T23:56:18.813Z"
+  },
+  {
+    "id": "eec468f1-7058-420e-a9ab-27b7aad01d18",
+    "category_id": "60425f5f-6cdf-4115-b1c9-12b4a8107b94",
+    "title": "Đoàn Võ Văn Trọng - Portfolio Hiện Đại",
+    "content": "**Xin chào!**\n\nTôi là Đoàn Võ Văn Trọng, một web developer đầy nhiệt huyết, luôn hướng tới sự sáng tạo và những ứng dụng web năng động. \n\n**Về Tôi:**\n\nHiện tại, tôi đang là sinh viên ngành Kỹ thuật Phần mềm tại Đại học Duy Tân. Tôi không ngừng trau dồi kiến thức và kỹ năng để tạo ra những sản phẩm chất lượng.\n\n**Những Điểm Nổi Bật:**\n\n*   **Đam mê:** Tạo ra các ứng dụng web sáng tạo.\n*   **Tính cách:** Hướng ngoại, coi trọng các mối quan hệ.\n*   **Mục tiêu:** Cùng bạn xây dựng những điều tuyệt vời!\n\n**Kỹ Năng & Công Nghệ:**\n\n*   **Ngôn Ngữ:** JavaScript, TypeScript, HTML/CSS.\n*   **Thư Viện/Framework:** React, NodeJS, VueJS.\n*   **Backend:** NestJS, NextJS, Laravel.\n*   **Database:** PostgreSQL, SQL Server, MongoDB.\n*   **Công Cụ:** VSCode, Postman, Git.\n\n**Kết Nối Với Tôi:**\n\nLuôn sẵn lòng hợp tác và khám phá những ý tưởng mới! Liên hệ với tôi qua:\n\n*   LinkedIn\n*   Facebook\n*   Discord\n*   Email\n*   GitHub\n*   Twitter\n\n**Hãy gửi tin nhắn cho tôi!**",
+    "style": "modern",
+    "url": "https://portfolio-van-trongs-projects.vercel.app",
+    "created_at": "2025-03-11T23:56:17.440Z",
+    "updated_at": "2025-03-11T23:56:17.440Z"
+  },
+  {
+    "id": "6ad685dc-fbe3-4922-a3dd-4a7bfc404178",
+    "category_id": "027f9fde-7165-443d-974f-27960ef46784",
+    "title": "Facebook – Kết nối và Chia sẻ với Mọi Người",
+    "content": "Facebook giúp bạn kết nối và chia sẻ với những người quan trọng trong cuộc sống của bạn. Đăng nhập ngay để bắt đầu chia sẻ những khoảnh khắc, kết nối bạn bè, gia đình và khám phá những điều thú vị xung quanh bạn.\n\n**Kết nối:**\n* Tìm kiếm và kết bạn với những người bạn biết.\n* Tham gia các nhóm để chia sẻ sở thích và đam mê.\n* Kết nối với những người nổi tiếng, thương hiệu và doanh nghiệp yêu thích.\n\n**Chia sẻ:**\n* Đăng tải những khoảnh khắc đáng nhớ trong cuộc sống của bạn.\n* Chia sẻ tin tức, bài viết và video thú vị.\n* Bày tỏ cảm xúc và suy nghĩ của bạn.\n\n**Khám phá:**\n* Khám phá những sự kiện và hoạt động đang diễn ra xung quanh bạn.\n* Tìm hiểu về những chủ đề bạn quan tâm.\n* Cập nhật tin tức và thông tin mới nhất.\n\n**Đăng nhập hoặc Đăng ký:**\nBạn chưa có tài khoản? Đăng ký ngay để trải nghiệm những tiện ích tuyệt vời mà Facebook mang lại.",
+    "style": "social",
+    "url": "https://facebook.com",
+    "created_at": "2025-03-11T23:56:17.295Z",
+    "updated_at": "2025-03-11T23:56:17.295Z"
+  }
+]
