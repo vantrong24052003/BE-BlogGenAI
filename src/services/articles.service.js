@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 
 export const getArticles = async ({ query, category, startDate, endDate, page, limit }) => {
-  const dbClient = await connectDB()
+  const client = await connectDB()
   const offset = (page - 1) * limit
 
   const sqlArticles = `
@@ -24,8 +24,8 @@ export const getArticles = async ({ query, category, startDate, endDate, page, l
       AND ($3::timestamp IS NULL OR created_at >= $3::timestamp) 
       AND ($4::timestamp IS NULL OR created_at <= $4::timestamp)`
 
-  const articles = await dbClient.query(sqlArticles, [query, category, startDate, endDate, limit, offset])
-  const total = await dbClient.query(sqlTotal, [query, category, startDate, endDate])
+  const articles = await client.query(sqlArticles, [query, category, startDate, endDate, limit, offset])
+  const total = await client.query(sqlTotal, [query, category, startDate, endDate])
 
   return {
     articles: articles.rows,

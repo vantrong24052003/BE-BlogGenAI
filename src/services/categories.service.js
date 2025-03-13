@@ -7,14 +7,14 @@ export const createCategory = async (name) => {
     throw new CustomError('Category name is required', 400)
   }
 
-  const dbClient = await connectDB()
-  const existingCategory = await dbClient.query(`select id from categories where name = $1`, [name])
+  const client = await connectDB()
+  const existingCategory = await client.query(`select id from categories where name = $1`, [name])
 
   if (existingCategory.rows.length > 0) {
     throw new CustomError('Category already exists', 409)
   }
 
-  const newCategory = await dbClient.query(
+  const newCategory = await client.query(
     `insert into categories (name) 
      values ($1) returning id`,
     [name]
@@ -24,8 +24,8 @@ export const createCategory = async (name) => {
 }
 
 export const getAllCategories = async () => {
-  const dbClient = await connectDB()
-  const categories = await dbClient.query(`select id, name from categories`)
+  const client = await connectDB()
+  const categories = await client.query(`select id, name from categories`)
   return categories.rows
 }
 
@@ -38,14 +38,14 @@ export const updateCategory = async (id, name) => {
     throw new CustomError('Invalid Category id format uuid', 400)
   }
 
-  const dbClient = await connectDB()
-  const existingCategory = await dbClient.query(`select id from categories where id = $1`, [id])
+  const client = await connectDB()
+  const existingCategory = await client.query(`select id from categories where id = $1`, [id])
 
   if (existingCategory.rows.length === 0) {
     throw new CustomError('Category not found', 404)
   }
 
-  await dbClient.query(`update categories set name = $1, updated_at = now() where id = $2`, [name, id])
+  await client.query(`update categories set name = $1, updated_at = now() where id = $2`, [name, id])
 
   return { id, name }
 }
@@ -59,14 +59,14 @@ export const deleteCategory = async (id) => {
     throw new CustomError('Invalid Category id format uuid', 400)
   }
 
-  const dbClient = await connectDB()
-  const existingCategory = await dbClient.query(`select id from categories where id = $1`, [id])
+  const client = await connectDB()
+  const existingCategory = await client.query(`select id from categories where id = $1`, [id])
 
   if (existingCategory.rows.length === 0) {
     throw new CustomError('Category not found', 404)
   }
 
-  await dbClient.query(`delete from categories where id = $1`, [id])
+  await client.query(`delete from categories where id = $1`, [id])
 
   return {
     message: 'Category deleted successfully'
@@ -79,15 +79,15 @@ export const saveArticle = async ({ title, content, style, category_name, url })
   }
 
   try {
-    const dbClient = await connectDB()
+    const client = await connectDB()
 
-    const existingCategory = await dbClient.query(`select id from categories where name = $1`, [category_name])
+    const existingCategory = await client.query(`select id from categories where name = $1`, [category_name])
 
     let categoryId = ''
     if (existingCategory.rows.length > 0) {
       categoryId = existingCategory.rows[0].id
     } else {
-      const newCategory = await dbClient.query(
+      const newCategory = await client.query(
         `insert into categories (name) 
          values ($1) returning id`,
         [category_name]
@@ -95,7 +95,7 @@ export const saveArticle = async ({ title, content, style, category_name, url })
       categoryId = newCategory.rows[0].id
     }
 
-    await dbClient.query(
+    await client.query(
       `insert into articles (category_id, title, content, style, url) 
        values ($1, $2, $3, $4, $5)`,
       [categoryId, title, content, style, url]

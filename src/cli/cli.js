@@ -24,7 +24,6 @@ export const crawlURL = (url, style, category) => {
     })
 
     worker.on('error', (err) => {
-      console.log(chalk.red(err.message))
       reject(err)
     })
 
@@ -51,8 +50,8 @@ program
     }
   })
 
-// yarn cli:nodemon crawl https://portfolio-van-trongs-projects.vercel.app/ --style formal --category tech
-// yarn cli:nodemon crawl https://portfolio-van-trongs-projects.vercel.app/ https://www.npmjs.com/search?q=keywords:worker_threads https://www.npmjs.com/package/parse-js --style formal --category tech
+// yarn cli crawl https://www.npmjs.com/package/np --style formal --category tech
+// yarn cli crawl https://portfolio-van-trongs-projects.vercel.app/ https://www.npmjs.com/search?q=keywords:worker_threads https://www.npmjs.com/package/parse-js --style formal --category tech
 program
   .command('crawl <urls...>')
   .description('Crawl and display full HTML from a list of URLs')
@@ -60,10 +59,14 @@ program
   .option('--category <category>', 'Category of the article')
   .action(async (urls, options) => {
     const { style, category } = options
+    if (!style || !category) {
+      console.log(chalk.red('Please provide all the required fields: style, category'))
+      process.exit(1)
+    }
+
     console.log(chalk.redBright(`Starting crawl for [${urls}]`))
 
     const spinner = ora('Waitting...').start()
-
     try {
       const results = await Promise.all(urls.map((url) => crawlURL(url, style, category)))
       results.forEach((result) => console.log(chalk.green(`Successfully crawled: ${result}`)))
@@ -112,6 +115,10 @@ program
   .option('--output <output>', 'Output file path')
   .action(async (options) => {
     const { format, output } = options
+    if (!format || !output) {
+      console.log(chalk.red('Please provide all the required fields: format, output'))
+      process.exit(1)
+    }
     const spinner = ora('Exporting articles...').start()
     try {
       await exportArticles(format, output)
@@ -124,7 +131,7 @@ program
 // 0h
 // yarn cli schedule --cron="0 0 * * *" --csv=/home/vantrong/Documents/BE-BlogGenAI/src/docs/data.csv
 // 2p
-// yarn cli schedule --cron="*/1 * * * *" --csv=/home/vantrong/Documents/BE-BlogGenAI/src/docs/data.csv
+// yarn cli schedule --cron="*/2* * * *" --csv=/home/vantrong/Documents/BE-BlogGenAI/src/docs/data.csv
 program
   .command('schedule')
   .description('Schedule automatic crawling')
@@ -132,6 +139,10 @@ program
   .option('--csv <csv>', 'CSV file path with URLs to crawl')
   .action(async (options) => {
     const { cron, csv } = options
+    if (!cron || !csv) {
+      console.log(chalk.red('Please provide all the required fields: cron, csv'))
+      process.exit(1)
+    }
     const spinner = ora('Scheduling crawl...').start()
     try {
       await scheduleCrawl(cron, csv)

@@ -11,7 +11,16 @@ const envSchema = yup.object().shape({
   PORT_DB: yup.number().required('PORT_DB is required'),
   NAME_DB: yup.string().required('NAME_DB is required'),
   // server
-  GOOGLE_LLM_API_KEY: yup.string().required('GOOGLE_LLM_API_KEY is required'),
+  GOOGLE_LLM_API_KEY_1: yup.string().required('GOOGLE_LLM_API_KEY_1 is required'),
+  GOOGLE_LLM_API_KEY_2: yup.string().required('GOOGLE_LLM_API_KEY_2 is required'),
+  GOOGLE_LLM_API_KEY_3: yup.string().required('GOOGLE_LLM_API_KEY_3 is required'),
+  GOOGLE_LLM_API_KEY_4: yup.string().required('GOOGLE_LLM_API_KEY_4 is required'),
+  GOOGLE_LLM_API_KEY_5: yup.string().required('GOOGLE_LLM_API_KEY_5 is required'),
+  GOOGLE_LLM_API_KEY_6: yup.string().required('GOOGLE_LLM_API_KEY_6 is required'),
+  GOOGLE_LLM_API_KEY_7: yup.string().required('GOOGLE_LLM_API_KEY_7 is required'),
+  GOOGLE_LLM_API_KEY_8: yup.string().required('GOOGLE_LLM_API_KEY_8 is required'),
+  GOOGLE_LLM_API_KEY_9: yup.string().required('GOOGLE_LLM_API_KEY_9 is required'),
+  GOOGLE_LLM_API_KEY_10: yup.string().required('GOOGLE_LLM_API_KEY_10 is required'),
   PORT: yup.number().required('PORT is required'),
   HOST: yup.string().required('HOST is required'),
   // email

@@ -12,16 +12,21 @@ if (!workerData || !workerData.url || !workerData.style || !workerData.category)
 const { url, style, category } = workerData
 
 export async function crawHtml() {
-  const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
-  const page = await browser.newPage()
-
   try {
+    const browser = await puppeteer.launch({
+      args: ['--no-sandbox', '--start-maximized'],
+      headless: false
+    })
+    const page = await browser.newPage()
+
+    await page.setViewport({ width: 1920, height: 1080 })
+
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 0 })
     console.log(chalk.blueBright(`Crawling ${url}`))
     console.log('-----------------Crawling successfully-----------------')
 
     const heading = await page.title()
-    // tiền xử lý
+
     const htmlContent = await page.evaluate(() => {
       document.querySelectorAll('script, style, meta').forEach((el) => el.remove())
       return document.body.innerText.trim()
@@ -34,15 +39,13 @@ export async function crawHtml() {
     const cleanResponse = response.replace(/```json|```/g, '').trim()
     const parsedResponse = JSON.parse(cleanResponse)
     parsedResponse.url = url
-
     await saveArticle(parsedResponse)
-
     parentPort.postMessage({ success: true, url })
   } catch (error) {
+    console.log(chalk.red(`Error crawling ${url}:`, error.message))
     parentPort.postMessage({ success: false, url, error: error.message })
   } finally {
     await browser.close()
   }
 }
-
 crawHtml()
